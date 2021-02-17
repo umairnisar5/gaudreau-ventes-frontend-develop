@@ -9,14 +9,17 @@ const resolvers = {
 
   const books = [
       {
+        "id": "1",
           "title ": "love",
           "author" : "amir ali"
        },
        {
+        "id" : "2",
         "title ": "andry",
         "author" : "mohsin "
      },
      {
+       "id" : "3",
         "title ": "story",
         "author" : "umair"
      },
@@ -30,6 +33,7 @@ const resolvers = {
 
 const typeDefs = gql`
   type Book {
+    id: Int 
     title: String
     author: String
   }
