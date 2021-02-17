@@ -1,0 +1,93 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+  margin: 0 auto;
+
+  .logo {
+    width: 150px;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: 0px;
+  }
+}
+
+.gaudrea {
+  .logout {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+    svg {
+      margin-right: 19px;
+    }
+  }
+}
+
+.menuExtraItem {
+  flex: none;
+  flex-grow: 1;
+  margin: 0;
+  padding: 13px 24px;
+  color: #7d7d7d;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.menuExtraItemTitle {
+  flex: none;
+  flex-grow: 0;
+  margin: 0;
+  padding: 13px 24px;
+  color: #a2a2a2;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .logout {
+    display: flex;
+    align-items: center;
+    margin: 10px !important;
+    font-weight: 500;
+    font-size: 16px;
+
+    svg {
+      margin-right: 0 !important;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .extraContent {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .logout {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    font-weight: 500;
+    font-size: 16px;
+
+    svg {
+      margin-right: 19px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.ant-pro-sider-light,
+.ant-layout-sider-light {
+  padding-top: 20px;
+  background: #f7f7f7 !important;
+  background-color: #f7f7f7 !important;
+}
+
+.ant-menu-item-selected {
+  margin: 0px 12px;
+  color: #171717;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #d6d6d6 !important;
+  border-radius: 4px;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active {
+  color: #171717 !important;
+}
+
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  display: none;
+}
+
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+  width: auto;
+}
+
+.ant-pro-sider.ant-layout-sider-light .ant-menu-item a {
+  padding: 12px;
+  color: #7d7d7d;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.ant-pro-sider.ant-layout-sider-light .ant-menu-item a:focus {
+  outline: none;
+}
+
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover,
+.ant-pro-sider.ant-layout-sider-light .ant-menu-item-selected a,
+.ant-pro-sider.ant-layout-sider-light .ant-menu-item a:hover {
+  color: #7d7d7d !important;
+}
+
+.ant-layout-sider-children {
+  padding-top: 20px;
+}
+
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background: #d6d6d6;
+}
+
+.ant-menu-inline-collapsed {
+  .ant-menu-item-selected {
+    margin: 0 !important;
+  }
+
+  .ant-menu-item a {
+    padding: 0 !important;
+  }
+}
+
+.ant-layout-sider-children {
+  div:nth-child(2) {
+    flex: none !important;
+    order: 1;
+  }
+
+  div:nth-child(1) {
+    flex: 1 1 0%;
+    order: 2;
+  }
+
+  div:nth-child(3) {
+    display: none;
+    order: 4;
+  }
+
+  div:nth-child(4) {
+    order: 3;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
